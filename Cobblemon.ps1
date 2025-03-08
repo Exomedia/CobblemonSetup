@@ -34,11 +34,11 @@ $DefaultInstancePath = "$env:USERPROFILE\curseforge\minecraft\Instances\Cobblemo
 
 if (-Not (Test-Path $DefaultInstancePath)) {
     Write-Host "Le dossier de l'instance Cobblemon Star Academy n'a pas ete trouve."
-    $UserInstancePath = Read-Host "Veuillez entrer le chemin correct de l'instance Minecraft"
+    $UserInstancePath = Read-Host "Veuillez entrer le chemin du modpack"
     
     while (-Not (Test-Path $UserInstancePath)) {
         Write-Host "Le chemin specifie est invalide. Essayez a nouveau."
-        $UserInstancePath = Read-Host "Veuillez entrer le chemin correct de l'instance Minecraft"
+        $UserInstancePath = Read-Host "Veuillez entrer le chemin du modpack"
     }
 
     $InstancePath = $UserInstancePath
