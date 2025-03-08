@@ -114,4 +114,7 @@ if ($InstalledByScript) {
     }
 }
 
+Remove-Item -Path $OutputPathCobbFR -Force
+Remove-Item -Path $OutputPathIcons -Force
+
 Write-Host "Script termine avec succes."
